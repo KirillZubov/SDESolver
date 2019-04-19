@@ -1,6 +1,6 @@
 using Plots, Random
 
-#solve schemeEuler–Maruyama dX = a(t,x)*dt + b(t,x)*dw
+#solve SDE using schemeEuler–Maruyama dX = a(t,x)*dt + b(t,x)*dw
 function SDEsolver(fa, fb, t0, tn, N, y0)
     t_init = t0
     t_end = tn
