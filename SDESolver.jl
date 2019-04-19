@@ -8,7 +8,7 @@ function SDEsolver(fa, fb, t0, tn, N, y0)
     y_init = y0
 
     function dW(delta_t)
-        return (rand()*2 - 1)* sqrt(delta_t)
+        return sqrt(dt) * randn()
     end
 
     ts = t_init : dt : t_end - dt
